@@ -1,0 +1,200 @@
+/* ---------- Reset & base ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: #808080;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 28px;
+  font-size: 1rem;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: #ff3b1f;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  padding: 60px 40px 80px;
+  max-width: 900px;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  color: #f4a93d;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #f4a93d;
+  color: #fff;
+  text-decoration: none;
+  padding: 18px 40px;
+  border-radius: 0 0 25px 0;
+  font-size: 1.1rem;
+}
+
+.btn:hover {
+  background: #d98f26;
+}
+
+/* ---------- Qualification ---------- */
+.qualification {
+  background: #212121;
+  padding: 50px 20px 60px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 12px 14px;
+  text-align: left;
+}
+
+th {
+  background: #808080;
+  color: #fff;
+}
+
+tbody tr:nth-child(odd) {
+  background: #f4c2cb;
+  color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background: #212121;
+  color: #fff;
+}
+
+/* ---------- Skills ---------- */
+.skills {
+  padding: 40px 20px 60px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skill-box {
+  padding: 15px 20px 40px;
+  text-align: center;
+  min-height: 220px;
+}
+
+.skill-box.light {
+  background: #f4c2cb;
+}
+
+.skill-box.dark {
+  background: #ea3323;
+}
+
+.skill-box h3 {
+  margin-bottom: 15px;
+}
+
+.skill-box ul {
+  list-style-position: inside;
+}
+
+/* ---------- Simple sections ---------- */
+.simple-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.simple-section.alt {
+  background: #212121;
+}
+
+.simple-section p {
+  max-width: 700px;
+  margin: 0 auto 10px;
+  font-size: 1.1rem;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: #808080;
+  text-align: center;
+  padding: 18px;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar nav a {
+    margin: 0 10px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    min-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+}
