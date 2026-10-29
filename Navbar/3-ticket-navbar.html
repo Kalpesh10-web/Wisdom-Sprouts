@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket Navbar</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; background: #fff; }
+
+    /* Top row */
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 120px;
+      background: #fff;
+    }
+
+    .left { display: flex; align-items: center; gap: 30px; flex: 1; }
+
+    .brand { font-size: 1.6rem; font-weight: bold; color: #222; letter-spacing: -1px; }
+    .brand span {
+      background: #6d28d9;
+      color: #fff;
+      border-radius: 8px;
+      padding: 0 8px;
+      margin-left: 2px;
+    }
+
+    .search {
+      display: flex; align-items: center; gap: 8px;
+      border: 1px solid #e5e5e5;
+      border-radius: 4px;
+      padding: 8px 12px;
+      width: 100%;
+      max-width: 520px;
+    }
+    .search svg { width: 16px; height: 16px; fill: #666; }
+    .search input {
+      border: none; outline: none; width: 100%;
+      font-size: 0.8rem;
+    }
+
+    .right { display: flex; align-items: center; gap: 22px; font-size: 0.85rem; color: #333; }
+    .signin {
+      background: #6d28d9; color: #fff; border: none;
+      padding: 6px 14px; border-radius: 4px;
+      font-size: 0.8rem; cursor: pointer;
+    }
+    .signin:hover { background: #5b21b6; }
+    .hamburger { width: 24px; height: 24px; fill: #333; cursor: pointer; }
+
+    /* Second row */
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      background: #f2f2f2;
+      padding: 10px 120px;
+      font-size: 0.78rem;
+    }
+
+    .bottom a {
+      color: #333;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    .bottom a:hover { color: #6d28d9; }
+    .bottom .group:last-child a { margin: 0 0 0 20px; }
+
+    @media (max-width: 900px) {
+      .top, .bottom { padding-left: 16px; padding-right: 16px; }
+      .bottom { flex-direction: column; gap: 8px; }
+      .bottom .group:last-child a { margin: 0 20px 0 0; }
+      .right .city { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="top">
+      <div class="left">
+        <div class="brand">ticket<span>town</span></div>
+        <div class="search">
+          <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          <input type="text" placeholder="Search for Movies, Events, Plays, Sports and Activities">
+        </div>
+      </div>
+
+      <div class="right">
+        <span class="city">Pune &#9662;</span>
+        <button class="signin">Sign in</button>
+        <svg class="hamburger" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="group">
+        <a href="#">Movies</a>
+        <a href="#">Stream</a>
+        <a href="#">Events</a>
+        <a href="#">Plays</a>
+        <a href="#">Sports</a>
+        <a href="#">Activities</a>
+      </div>
+      <div class="group">
+        <a href="#">ListYourShow</a>
+        <a href="#">Corporates</a>
+        <a href="#">Offers</a>
+        <a href="#">Gift Cards</a>
+      </div>
+    </div>
+  </header>
+
+</body>
+</html>

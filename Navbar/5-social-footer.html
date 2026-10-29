@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Footer</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fafafa;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #8e8e8e;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background: #0c1014;
+      color: #a8a8a8;
+      text-align: center;
+      padding: 26px 16px 22px;
+      font-size: 0.72rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 16px;
+      max-width: 900px;
+      margin: 0 auto 16px;
+    }
+
+    .links a {
+      color: #a8a8a8;
+      text-decoration: none;
+    }
+    .links a:hover { text-decoration: underline; color: #fff; }
+
+    .bottom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .bottom select {
+      background: transparent;
+      color: #a8a8a8;
+      border: none;
+      font-size: 0.72rem;
+      cursor: pointer;
+    }
+    .bottom select option { color: #000; }
+  </style>
+</head>
+<body>
+
+  <main>Page content goes here</main>
+
+  <footer>
+    <div class="links">
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Jobs</a>
+      <a href="#">Help</a>
+      <a href="#">API</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Locations</a>
+      <a href="#">Popular</a>
+      <a href="#">SnapShare Lite</a>
+      <a href="#">Creators</a>
+      <a href="#">Verified</a>
+    </div>
+
+    <div class="bottom">
+      <select>
+        <option>English</option>
+        <option>हिन्दी</option>
+        <option>मराठी</option>
+      </select>
+      <span>&copy; 2026 SnapShare (fictional)</span>
+    </div>
+  </footer>
+
+</body>
+</html>
